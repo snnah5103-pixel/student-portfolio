@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portfolio & Academic Management</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo">StudentPortal</div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#planner">Academic Planner</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- 1. Homepage Section -->
+    <section id="home" class="hero">
+      <img src="my jpeg.jpeg" alt="my profile picture">
+      <div>
+        <h1>Welcome to My Academic Portfolio</h1>
+        <h2>Hi, I'm Nnah Sunny Emeka</h2>
+        <p>I am an undergraduate student at MIVA Open University passionate about software engineering, web development, and building practical digital solutions. Explore my background, projects, and interactive academic planner below.</p>                    
+
+       </div>
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Educational Background</h3>
+          <p><strong>B.Sc. Computer Science</strong> – MIVA Open University</p>
+          <p>Relevant Coursework: Web Development, Data Structures, Database Management Systems, and Software Engineering.</p>
+        </div>
+
+        <div class="card">
+          <h3>Career Aspirations</h3>
+          <p>I aspire to become a Full-Stack Software Engineer building scalable educational and financial technology tools across Nigeria and Africa.</p>
+        </div>
+
+        <div class="card">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>HTML5, CSS3 & Responsive Design</li>
+            <li>JavaScript (ES6+) & DOM Manipulation</li>
+            <li>Git & GitHub Version Control</li>
+            <li>Python & SQL Fundamentals</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Hobbies & Interests</h3>
+          <p>Outside academics, I enjoy coding challenges, reading technology blogs, playing chess, and collaborating with fellow student developers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="cgpa.jpeg.jpeg" alt="CGPA Calculator Screenshot">
+          <h3>1. University CGPA Calculator</h3>
+          <p>A web application that calculates semester GPA and cumulative CGPA based on course credit units and grades.</p>
+          <a href="https://github.com" target="_blank" class="btn">View Project</a>
+        </article>
+
+        <article class="card">
+          <img src="library.jpeg.jpeg" alt="Digital Library Screenshot">
+          <h3>2. Digital Library Catalog</h3>
+          <p>A responsive front-end catalog designed for students to browse, search, and reserve textbooks and research materials.</p>
+          <a href="https://github.com" target="_blank" class="btn">View Project</a>
+        </article>
+
+        <article class="card">
+          <img src="weather.jpeg" alt="Weather Dashboard Screenshot">
+          <h3>3. Campus Weather Dashboard</h3>
+          <p>A JavaScript weather forecast dashboard built to help commuting students plan their daily study and campus schedules.</p>
+          <a href="https://github.com" target="_blank" class="btn">View Project</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. Academic Planner Section -->
+    <section id="planner">
+      <h2>Academic Planner</h2>
+      <p>Add assignments, study goals, or exam deadlines below. Click any task to mark it as completed.</p>
+      <div class="card">
+        <div class="planner-input">
+          <input type="text" id="taskInput" placeholder="Enter a new academic task...">
+          <button type="button" id="addTaskBtn" class="btn">Add Task</button>
+        </div>
+        <ul id="taskList" class="task-list"></ul>
+      </div>
+    </section>
+
+    <!-- 5. Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="card">
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p id="formFeedback"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>copy; [2026 NNAH SUNNY EMEKA] | MIVA Open University Student Portfolio</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
